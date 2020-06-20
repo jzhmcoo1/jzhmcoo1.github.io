@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>jzhmcoo1</title>
+  <icon>http://www.lihangzhu.com/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.lihangzhu.com/"/>
+  <updated>2020-06-03T00:27:19.740Z</updated>
+  <id>http://www.lihangzhu.com/</id>
+  
+  <author>
+    <name>lixing</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flask博客开发记录</title>
+    <link href="http://www.lihangzhu.com/2020/06/03/Flask-dev-note/"/>
+    <id>http://www.lihangzhu.com/2020/06/03/Flask-dev-note/</id>
+    <published>2020-06-03T00:14:22.000Z</published>
+    <updated>2020-06-03T00:27:19.740Z</updated>
+    
+    <summary type="html">
+    
+      本学期大作业开发了一个基于 flask 的博客
+    
+    </summary>
+    
+    
+      <category term="DevNotes" scheme="http://www.lihangzhu.com/categories/DevNotes/"/>
+    
+    
+      <category term="python" scheme="http://www.lihangzhu.com/tags/python/"/>
+    
+      <category term="flask" scheme="http://www.lihangzhu.com/tags/flask/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python collections summary</title>
+    <link href="http://www.lihangzhu.com/2020/05/23/Python-collections/"/>
+    <id>http://www.lihangzhu.com/2020/05/23/Python-collections/</id>
+    <published>2020-05-23T02:36:01.000Z</published>
+    <updated>2020-05-25T01:07:43.130Z</updated>
+    
+    <summary type="html">
+    
+      A summary of Python collections based on Python document.
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="syntax" scheme="http://www.lihangzhu.com/categories/StudyNotes/syntax/"/>
+    
+    
+      <category term="python" scheme="http://www.lihangzhu.com/tags/python/"/>
+    
+      <category term="syntax" scheme="http://www.lihangzhu.com/tags/syntax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Share Some Useful Tools</title>
+    <link href="http://www.lihangzhu.com/2020/05/22/app-share-I/"/>
+    <id>http://www.lihangzhu.com/2020/05/22/app-share-I/</id>
+    <published>2020-05-22T09:12:31.000Z</published>
+    <updated>2020-05-22T09:18:08.270Z</updated>
+    
+    <summary type="html">
+    
+      share some tools that is useful for dev.
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://www.lihangzhu.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://www.lihangzhu.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="工具分享" scheme="http://www.lihangzhu.com/tags/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Box Model</title>
+    <link href="http://www.lihangzhu.com/2020/05/18/CSS-Box-Model/"/>
+    <id>http://www.lihangzhu.com/2020/05/18/CSS-Box-Model/</id>
+    <published>2020-05-18T15:08:09.000Z</published>
+    <updated>2020-05-22T00:36:00.700Z</updated>
+    
+    <summary type="html">
+    
+      A study notes when learning css box model on MDN
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="WebDevelopment" scheme="http://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
+    
+    
+      <category term="CSS" scheme="http://www.lihangzhu.com/tags/CSS/"/>
+    
+      <category term="The box model" scheme="http://www.lihangzhu.com/tags/The-box-model/"/>
+    
+      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Instruction System</title>
+    <link href="http://www.lihangzhu.com/2020/05/17/Instruction-system/"/>
+    <id>http://www.lihangzhu.com/2020/05/17/Instruction-system/</id>
+    <published>2020-05-17T05:52:31.000Z</published>
+    <updated>2020-05-17T06:00:39.040Z</updated>
+    
+    <summary type="html">
+    
+      Brief Summary of Instruction System
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="Computer composition and structure" scheme="http://www.lihangzhu.com/categories/StudyNotes/Computer-composition-and-structure/"/>
+    
+    
+      <category term="Computation" scheme="http://www.lihangzhu.com/tags/Computation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>死锁概述</title>
+    <link href="http://www.lihangzhu.com/2020/04/24/Deadlock-I/"/>
+    <id>http://www.lihangzhu.com/2020/04/24/Deadlock-I/</id>
+    <published>2020-04-24T14:40:57.000Z</published>
+    <updated>2020-05-05T02:49:57.570Z</updated>
+    
+    <summary type="html">
+    
+      死锁的定义，产生死锁的原因，死锁的处理策略和比较
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="Operating System" scheme="http://www.lihangzhu.com/categories/StudyNotes/Operating-System/"/>
+    
+    
+      <category term="OS" scheme="http://www.lihangzhu.com/tags/OS/"/>
+    
+      <category term="algorithm" scheme="http://www.lihangzhu.com/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>页面置换算法</title>
+    <link href="http://www.lihangzhu.com/2020/04/22/Page-Replacement-Algorithm/"/>
+    <id>http://www.lihangzhu.com/2020/04/22/Page-Replacement-Algorithm/</id>
+    <published>2020-04-22T09:48:13.000Z</published>
+    <updated>2020-05-13T14:34:06.390Z</updated>
+    
+    <summary type="html">
+    
+      对操作系统中的页面置换算法做个小总结
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="Operating System" scheme="http://www.lihangzhu.com/categories/StudyNotes/Operating-System/"/>
+    
+    
+      <category term="OS" scheme="http://www.lihangzhu.com/tags/OS/"/>
+    
+      <category term="algorithm" scheme="http://www.lihangzhu.com/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS selectors I</title>
+    <link href="http://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/"/>
+    <id>http://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/</id>
+    <published>2020-04-17T13:20:52.000Z</published>
+    <updated>2020-04-22T14:14:59.630Z</updated>
+    
+    <summary type="html">
+    
+      A Brief Summary of CSS selectors types (Part I)
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="WebDevelopment" scheme="http://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
+    
+    
+      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
+    
+      <category term="CSS selectors" scheme="http://www.lihangzhu.com/tags/CSS-selectors/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Optimal storage of disk files</title>
+    <link href="http://www.lihangzhu.com/2020/04/09/Optimal-storage-of-disk-files/"/>
+    <id>http://www.lihangzhu.com/2020/04/09/Optimal-storage-of-disk-files/</id>
+    <published>2020-04-09T08:31:30.000Z</published>
+    <updated>2020-04-22T07:12:56.000Z</updated>
+    
+    <summary type="html">
+    
+      Greedy algorithm assignment
+    
+    </summary>
+    
+    
+      <category term="Assignment" scheme="http://www.lihangzhu.com/categories/Assignment/"/>
+    
+      <category term="algorithm" scheme="http://www.lihangzhu.com/categories/Assignment/algorithm/"/>
+    
+    
+      <category term="algorithm" scheme="http://www.lihangzhu.com/tags/algorithm/"/>
+    
+      <category term="greedy" scheme="http://www.lihangzhu.com/tags/greedy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Document and website structure</title>
+    <link href="http://www.lihangzhu.com/2020/04/01/Document-and-website-structure/"/>
+    <id>http://www.lihangzhu.com/2020/04/01/Document-and-website-structure/</id>
+    <published>2020-04-01T15:58:42.000Z</published>
+    <updated>2020-04-22T14:15:03.600Z</updated>
+    
+    <summary type="html">
+    
+      An aritcle reprinted from MDN
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="WebDevelopment" scheme="http://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
+    
+    
+      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
+    
+      <category term="Document structure" scheme="http://www.lihangzhu.com/tags/Document-structure/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Computation&#39;s Assignment</title>
+    <link href="http://www.lihangzhu.com/2020/03/31/Computation-s-Assignment/"/>
+    <id>http://www.lihangzhu.com/2020/03/31/Computation-s-Assignment/</id>
+    <published>2020-03-31T08:13:50.000Z</published>
+    <updated>2020-04-22T07:16:03.120Z</updated>
+    
+    <summary type="html">
+    
+      The first Computer Composition assginment.
+    
+    </summary>
+    
+    
+      <category term="Assignment" scheme="http://www.lihangzhu.com/categories/Assignment/"/>
+    
+      <category term="Computer composition and structure" scheme="http://www.lihangzhu.com/categories/Assignment/Computer-composition-and-structure/"/>
+    
+    
+      <category term="Computation" scheme="http://www.lihangzhu.com/tags/Computation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最优时间表问题</title>
+    <link href="http://www.lihangzhu.com/2020/03/26/Optimal-Timetable/"/>
+    <id>http://www.lihangzhu.com/2020/03/26/Optimal-Timetable/</id>
+    <published>2020-03-26T06:02:29.000Z</published>
+    <updated>2020-04-22T14:12:34.840Z</updated>
+    
+    <summary type="html">
+    
+      最优时间表问题的 dp 算法， python 实现，时间复杂度的分析。
+    
+    </summary>
+    
+    
+      <category term="Assignment" scheme="http://www.lihangzhu.com/categories/Assignment/"/>
+    
+      <category term="algorithm" scheme="http://www.lihangzhu.com/categories/Assignment/algorithm/"/>
+    
+    
+      <category term="algorithm" scheme="http://www.lihangzhu.com/tags/algorithm/"/>
+    
+      <category term="dp" scheme="http://www.lihangzhu.com/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python中的and与or</title>
+    <link href="http://www.lihangzhu.com/2020/03/11/Python-and-or/"/>
+    <id>http://www.lihangzhu.com/2020/03/11/Python-and-or/</id>
+    <published>2020-03-11T00:26:10.000Z</published>
+    <updated>2020-04-22T14:15:14.410Z</updated>
+    
+    <summary type="html">
+    
+      Python中 and 和 or 的用法
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="Syntax" scheme="http://www.lihangzhu.com/categories/StudyNotes/Syntax/"/>
+    
+    
+      <category term="python" scheme="http://www.lihangzhu.com/tags/python/"/>
+    
+      <category term="syntax" scheme="http://www.lihangzhu.com/tags/syntax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单的Markdown语法总结</title>
+    <link href="http://www.lihangzhu.com/2020/03/10/Simple-Markdown-Syntax/"/>
+    <id>http://www.lihangzhu.com/2020/03/10/Simple-Markdown-Syntax/</id>
+    <published>2020-03-10T00:36:22.000Z</published>
+    <updated>2020-05-30T07:08:29.910Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;1-写在前面&quot;&gt;&lt;a href=&quot;#1-写在前面&quot; class=&quot;headerlink&quot; title=&quot;1. 写在前面&quot;&gt;&lt;/a&gt;1. 写在前面&lt;/h1&gt;&lt;p&gt;刚开始写博, 对md的语法还不熟悉, 决定先整理一下md的&lt;strong&gt;basic syntax&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.markdownguide.org/basic-syntax/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;markdownguide.org&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="Syntax" scheme="http://www.lihangzhu.com/categories/StudyNotes/Syntax/"/>
+    
+    
+      <category term="syntax" scheme="http://www.lihangzhu.com/tags/syntax/"/>
+    
+      <category term="markdown" scheme="http://www.lihangzhu.com/tags/markdown/"/>
+    
+  </entry>
+  
+</feed>
