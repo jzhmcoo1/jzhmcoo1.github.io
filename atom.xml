@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lihangzhu.com/"/>
-  <updated>2020-06-03T00:27:19.740Z</updated>
+  <updated>2020-06-22T09:25:41.673Z</updated>
   <id>http://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux Learning I (云服务器的购买与配置)</title>
+    <link href="http://www.lihangzhu.com/2020/06/20/Config-my-centos-server/"/>
+    <id>http://www.lihangzhu.com/2020/06/20/Config-my-centos-server/</id>
+    <published>2020-06-20T14:07:20.000Z</published>
+    <updated>2020-06-22T09:25:41.673Z</updated>
+    
+    <summary type="html">
+    
+      Linux学习系列文章第一篇，主要讲述服务器的购买与配置
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="BuildDevEnv" scheme="http://www.lihangzhu.com/categories/StudyNotes/BuildDevEnv/"/>
+    
+    
+      <category term="Linux" scheme="http://www.lihangzhu.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Flask博客开发记录</title>
