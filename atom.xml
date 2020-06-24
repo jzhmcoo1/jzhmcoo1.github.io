@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.lihangzhu.com/"/>
-  <updated>2020-06-22T10:04:37.012Z</updated>
+  <updated>2020-06-24T16:15:11.129Z</updated>
   <id>http://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux Learning III (开源项目的部署)</title>
+    <link href="http://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/"/>
+    <id>http://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/</id>
+    <published>2020-06-24T16:09:22.000Z</published>
+    <updated>2020-06-24T16:15:11.129Z</updated>
+    
+    <summary type="html">
+    
+      Linux学习系列文章第三篇，主要讲述如何部署一个前后端分离项目
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="http://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="BuildDevEnv" scheme="http://www.lihangzhu.com/categories/StudyNotes/BuildDevEnv/"/>
+    
+    
+      <category term="Linux" scheme="http://www.lihangzhu.com/tags/Linux/"/>
+    
+      <category term="RuoYi" scheme="http://www.lihangzhu.com/tags/RuoYi/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux Learning II (Hexo 从 GitPage 到腾讯云)</title>
@@ -44,7 +69,7 @@
     <link href="http://www.lihangzhu.com/2020/06/20/Config-my-centos-server-I/"/>
     <id>http://www.lihangzhu.com/2020/06/20/Config-my-centos-server-I/</id>
     <published>2020-06-20T14:07:20.000Z</published>
-    <updated>2020-06-22T10:00:57.151Z</updated>
+    <updated>2020-06-24T14:47:32.493Z</updated>
     
     <summary type="html">
     
