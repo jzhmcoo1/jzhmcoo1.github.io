@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lihangzhu.com/link/index.html</loc>
+    
+    <lastmod>2020-06-28T09:42:26.425Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lihangzhu.com/about/index.html</loc>
     
     <lastmod>2020-06-26T03:40:16.257Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/</loc>
     
     <lastmod>2020-06-22T10:04:37.012Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lihangzhu.com/link/index.html</loc>
-    
-    <lastmod>2020-06-21T02:54:47.617Z</lastmod>
     
   </url>
   
