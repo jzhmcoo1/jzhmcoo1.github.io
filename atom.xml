@@ -152,11 +152,11 @@
       <category term="WebDevelopment" scheme="http://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
     
     
+      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
+    
       <category term="CSS" scheme="http://www.lihangzhu.com/tags/CSS/"/>
     
       <category term="The box model" scheme="http://www.lihangzhu.com/tags/The-box-model/"/>
-    
-      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
     
   </entry>
   
@@ -252,9 +252,9 @@
       <category term="WebDevelopment" scheme="http://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
     
     
-      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
-    
       <category term="CSS selectors" scheme="http://www.lihangzhu.com/tags/CSS-selectors/"/>
+    
+      <category term="Web" scheme="http://www.lihangzhu.com/tags/Web/"/>
     
   </entry>
   
