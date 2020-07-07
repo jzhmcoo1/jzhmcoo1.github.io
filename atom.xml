@@ -44,7 +44,7 @@
     <link href="https://www.lihangzhu.com/2020/07/07/4o8/"/>
     <id>https://www.lihangzhu.com/2020/07/07/4o8/</id>
     <published>2020-07-07T02:34:35.000Z</published>
-    <updated>2020-07-07T04:18:27.220Z</updated>
+    <updated>2020-07-07T04:25:19.838Z</updated>
     
     <summary type="html">
     
@@ -226,79 +226,6 @@
   </entry>
   
   <entry>
-    <title>Instruction System</title>
-    <link href="https://www.lihangzhu.com/2020/05/17/Instruction-system/"/>
-    <id>https://www.lihangzhu.com/2020/05/17/Instruction-system/</id>
-    <published>2020-05-17T05:52:31.000Z</published>
-    <updated>2020-05-17T06:00:39.040Z</updated>
-    
-    <summary type="html">
-    
-      Brief Summary of Instruction System
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="Computer composition and structure" scheme="https://www.lihangzhu.com/categories/StudyNotes/Computer-composition-and-structure/"/>
-    
-    
-      <category term="Computation" scheme="https://www.lihangzhu.com/tags/Computation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>死锁概述</title>
-    <link href="https://www.lihangzhu.com/2020/04/24/Deadlock-I/"/>
-    <id>https://www.lihangzhu.com/2020/04/24/Deadlock-I/</id>
-    <published>2020-04-24T14:40:57.000Z</published>
-    <updated>2020-05-05T02:49:57.570Z</updated>
-    
-    <summary type="html">
-    
-      死锁的定义，产生死锁的原因，死锁的处理策略和比较
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="Operating System" scheme="https://www.lihangzhu.com/categories/StudyNotes/Operating-System/"/>
-    
-    
-      <category term="OS" scheme="https://www.lihangzhu.com/tags/OS/"/>
-    
-      <category term="algorithm" scheme="https://www.lihangzhu.com/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>页面置换算法</title>
-    <link href="https://www.lihangzhu.com/2020/04/22/Page-Replacement-Algorithm/"/>
-    <id>https://www.lihangzhu.com/2020/04/22/Page-Replacement-Algorithm/</id>
-    <published>2020-04-22T09:48:13.000Z</published>
-    <updated>2020-05-13T14:34:06.390Z</updated>
-    
-    <summary type="html">
-    
-      对操作系统中的页面置换算法做个小总结
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="Operating System" scheme="https://www.lihangzhu.com/categories/StudyNotes/Operating-System/"/>
-    
-    
-      <category term="OS" scheme="https://www.lihangzhu.com/tags/OS/"/>
-    
-      <category term="algorithm" scheme="https://www.lihangzhu.com/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CSS selectors I</title>
     <link href="https://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/"/>
     <id>https://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/</id>
@@ -324,31 +251,6 @@
   </entry>
   
   <entry>
-    <title>Optimal storage of disk files</title>
-    <link href="https://www.lihangzhu.com/2020/04/09/Optimal-storage-of-disk-files/"/>
-    <id>https://www.lihangzhu.com/2020/04/09/Optimal-storage-of-disk-files/</id>
-    <published>2020-04-09T08:31:30.000Z</published>
-    <updated>2020-04-22T07:12:56.000Z</updated>
-    
-    <summary type="html">
-    
-      Greedy algorithm assignment
-    
-    </summary>
-    
-    
-      <category term="Assignment" scheme="https://www.lihangzhu.com/categories/Assignment/"/>
-    
-      <category term="algorithm" scheme="https://www.lihangzhu.com/categories/Assignment/algorithm/"/>
-    
-    
-      <category term="algorithm" scheme="https://www.lihangzhu.com/tags/algorithm/"/>
-    
-      <category term="greedy" scheme="https://www.lihangzhu.com/tags/greedy/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Document and website structure</title>
     <link href="https://www.lihangzhu.com/2020/04/01/Document-and-website-structure/"/>
     <id>https://www.lihangzhu.com/2020/04/01/Document-and-website-structure/</id>
@@ -370,79 +272,6 @@
       <category term="Web" scheme="https://www.lihangzhu.com/tags/Web/"/>
     
       <category term="Document structure" scheme="https://www.lihangzhu.com/tags/Document-structure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Computation&#39;s Assignment</title>
-    <link href="https://www.lihangzhu.com/2020/03/31/Computation-s-Assignment/"/>
-    <id>https://www.lihangzhu.com/2020/03/31/Computation-s-Assignment/</id>
-    <published>2020-03-31T08:13:50.000Z</published>
-    <updated>2020-04-22T07:16:03.120Z</updated>
-    
-    <summary type="html">
-    
-      The first Computer Composition assginment.
-    
-    </summary>
-    
-    
-      <category term="Assignment" scheme="https://www.lihangzhu.com/categories/Assignment/"/>
-    
-      <category term="Computer composition and structure" scheme="https://www.lihangzhu.com/categories/Assignment/Computer-composition-and-structure/"/>
-    
-    
-      <category term="Computation" scheme="https://www.lihangzhu.com/tags/Computation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最优时间表问题</title>
-    <link href="https://www.lihangzhu.com/2020/03/26/Optimal-Timetable/"/>
-    <id>https://www.lihangzhu.com/2020/03/26/Optimal-Timetable/</id>
-    <published>2020-03-26T06:02:29.000Z</published>
-    <updated>2020-04-22T14:12:34.840Z</updated>
-    
-    <summary type="html">
-    
-      最优时间表问题的 dp 算法， python 实现，时间复杂度的分析。
-    
-    </summary>
-    
-    
-      <category term="Assignment" scheme="https://www.lihangzhu.com/categories/Assignment/"/>
-    
-      <category term="algorithm" scheme="https://www.lihangzhu.com/categories/Assignment/algorithm/"/>
-    
-    
-      <category term="algorithm" scheme="https://www.lihangzhu.com/tags/algorithm/"/>
-    
-      <category term="dp" scheme="https://www.lihangzhu.com/tags/dp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python中的and与or</title>
-    <link href="https://www.lihangzhu.com/2020/03/11/Python-and-or/"/>
-    <id>https://www.lihangzhu.com/2020/03/11/Python-and-or/</id>
-    <published>2020-03-11T00:26:10.000Z</published>
-    <updated>2020-04-22T14:15:14.410Z</updated>
-    
-    <summary type="html">
-    
-      Python中 and 和 or 的用法
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="Syntax" scheme="https://www.lihangzhu.com/categories/StudyNotes/Syntax/"/>
-    
-    
-      <category term="python" scheme="https://www.lihangzhu.com/tags/python/"/>
-    
-      <category term="syntax" scheme="https://www.lihangzhu.com/tags/syntax/"/>
     
   </entry>
   
