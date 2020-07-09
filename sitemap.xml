@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lihangzhu.com/link/index.html</loc>
+    
+    <lastmod>2020-07-09T02:01:12.924Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.lihangzhu.com/2020/07/07/4o8-DataStructure-Linear-List/</loc>
+    
+    <lastmod>2020-07-07T15:11:40.226Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lihangzhu.com/2020/07/07/4o8/</loc>
     
     <lastmod>2020-07-07T04:40:04.327Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/</loc>
+    
+    <lastmod>2020-07-07T04:38:47.336Z</lastmod>
     
   </url>
   
@@ -25,14 +46,7 @@
   <url>
     <loc>https://www.lihangzhu.com/2020/07/06/Linux-files-directories-permissions/</loc>
     
-    <lastmod>2020-07-06T05:27:32.029Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lihangzhu.com/link/index.html</loc>
-    
-    <lastmod>2020-06-28T09:42:26.425Z</lastmod>
+    <lastmod>2020-07-07T02:28:32.083Z</lastmod>
     
   </url>
   
@@ -117,13 +131,6 @@
     <loc>https://www.lihangzhu.com/2020/04/01/Document-and-website-structure/</loc>
     
     <lastmod>2020-04-22T14:15:03.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/</loc>
-    
-    <lastmod>2020-04-22T14:14:59.630Z</lastmod>
     
   </url>
   
