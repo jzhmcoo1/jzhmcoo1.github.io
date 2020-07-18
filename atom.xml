@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-07-12T09:47:39.405Z</updated>
+  <updated>2020-07-18T07:38:02.446Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git学习笔记</title>
+    <link href="https://www.lihangzhu.com/2020/07/18/LearnGit/"/>
+    <id>https://www.lihangzhu.com/2020/07/18/LearnGit/</id>
+    <published>2020-07-18T07:36:38.000Z</published>
+    <updated>2020-07-18T07:38:02.446Z</updated>
+    
+    <summary type="html">
+    
+      本文根据廖雪峰老师的 Git 教程总结的学习笔记
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+      <category term="Git" scheme="https://www.lihangzhu.com/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Leetcode-1144</title>
