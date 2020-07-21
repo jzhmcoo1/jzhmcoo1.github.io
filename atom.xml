@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-07-18T07:38:02.446Z</updated>
+  <updated>2020-07-21T08:36:26.307Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript学习笔记——正则表达式</title>
+    <link href="https://www.lihangzhu.com/2020/07/21/JavaScript-RegExp/"/>
+    <id>https://www.lihangzhu.com/2020/07/21/JavaScript-RegExp/</id>
+    <published>2020-07-21T08:27:34.000Z</published>
+    <updated>2020-07-21T08:36:26.307Z</updated>
+    
+    <summary type="html">
+    
+      学习JavaScript正则表达式时的学习笔记
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.lihangzhu.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Git学习笔记</title>
