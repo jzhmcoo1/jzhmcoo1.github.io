@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.lihangzhu.com/2020/06/20/Config-my-centos-server-I/</loc>
+    <lastmod>2020-07-22</lastmod>
+  </url>  <url>
+    <loc>https://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/</loc>
+    <lastmod>2020-07-22</lastmod>
+  </url>  <url>
+    <loc>https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/</loc>
+    <lastmod>2020-07-22</lastmod>
+  </url>  <url>
     <loc>https://www.lihangzhu.com/2020/07/21/JavaScript-RegExp/</loc>
     <lastmod>2020-07-21</lastmod>
   </url>  <url>
@@ -25,17 +34,8 @@
     <loc>https://www.lihangzhu.com/2020/07/07/4o8-DataStructure-xulun/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://www.lihangzhu.com/2020/06/20/Config-my-centos-server-I/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
     <loc>https://www.lihangzhu.com/2020/07/06/Linux-files-directories-permissions/</loc>
     <lastmod>2020-07-07</lastmod>
-  </url>  <url>
-    <loc>https://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/</loc>
-    <lastmod>2020-06-24</lastmod>
-  </url>  <url>
-    <loc>https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/</loc>
-    <lastmod>2020-06-22</lastmod>
   </url>  <url>
     <loc>https://www.lihangzhu.com/2020/06/03/Flask-dev-note/</loc>
     <lastmod>2020-06-03</lastmod>
