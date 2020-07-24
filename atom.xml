@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-07-21T12:36:28.400Z</updated>
+  <updated>2020-07-24T09:39:25.330Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript学习笔记——面向对象[创建对象]</title>
+    <link href="https://www.lihangzhu.com/2020/07/22/JavaScipt-OOP/"/>
+    <id>https://www.lihangzhu.com/2020/07/22/JavaScipt-OOP/</id>
+    <published>2020-07-22T07:35:44.000Z</published>
+    <updated>2020-07-24T09:39:25.330Z</updated>
+    
+    <summary type="html">
+    
+      学习JavaScript面向对象时的学习笔记，主要包含创建对象的几种方式。
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.lihangzhu.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript学习笔记——正则表达式</title>
