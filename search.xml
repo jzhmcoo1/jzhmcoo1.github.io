@@ -4,6 +4,85 @@
   
     
     <entry>
+      <title>JavaScript学习笔记——函数表达式[闭包]</title>
+      <link href="/2020/08/16/JavaScript-closure/"/>
+      <url>/2020/08/16/JavaScript-closure/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>闭包是指有权访问另一个函数作用域中的变量的函数。</p></blockquote><p>创建闭包的常见方式，是在一个函数内部创建另一个函数</p><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createComparisonFunction</span>(<span class="params">propertyName</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">object1, object2</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> value1 = object1[propertyName];</span><br><span class="line">        <span class="keyword">var</span> value2 = object2[propertyName];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (value1 &lt; value2) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (value1 &gt; value2) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在这个例子中，3、4行代码时内部函数（一个匿名函数）中的代码，这两行代码访问了外部函数中的变量<code>propertyName</code>。即使这个内部函数被返回了，而且是在其他地方被调用了，它仍然可以访问变量<code>propertyName</code>。之所以还能访问那个变量，是因为内部函数的作用域链中包含<code>createComparisonFunction()</code>的作用域。</p><h1 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h1><p>当某个函数被调用时，会创建一个执行环境（execution context)及相应的作用域链。然后，使用<code>arguments</code>和其他命名参数的值来初始化函数的活动对象（activation object)。但在作用域链中，外部函数的活动对象始终处于第二位，外部函数的外部函数的活动对象处于第三位…直到作为作用域链终点的全局执行环境。</p><h1 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h1><h2 id="闭包与变量"><a href="#闭包与变量" class="headerlink" title="闭包与变量"></a>闭包与变量</h2><p>在 JavaScript 语言中，只有函数内部的子函数才能读取内部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。闭包最大的特点，就是它可以“记住”诞生的环境，比如<code>f2</code>记住了它诞生的环境<code>f1</code>，所以从<code>f2</code>可以得到<code>f1</code>的内部变量。在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。</p><p>闭包的最大用处有两个，一个是可以<strong>读取函数内部的变量</strong>，另一个就是让这些变量<strong>始终保持在内存中</strong>，即闭包可以使得它诞生环境一直存在。请看下面的例子，闭包使得内部变量记住上一次调用时的运算结果。</p><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createIncrementor</span>(<span class="params">start</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start++;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> inc = createIncrementor(<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line">inc() <span class="comment">// 5</span></span><br><span class="line">inc() <span class="comment">// 6</span></span><br><span class="line">inc() <span class="comment">// 7</span></span><br></pre></td></tr></table></figure><p>上面代码中，<code>start</code>是函数<code>createIncrementor</code>的内部变量。通过闭包，<code>start</code>的状态被保留了，每一次调用都是在上一次调用的基础上进行计算。从中可以看到，闭包<code>inc</code>使得函数<code>createIncrementor</code>的内部环境，一直存在。所以，闭包可以看作是函数内部作用域的一个接口。</p><p>为什么会这样呢？原因就在于<code>inc</code>始终在内存中，而<code>inc</code>的存在依赖于<code>createIncrementor</code>，因此也始终在内存中，不会在调用结束后，被垃圾回收机制回收。</p><h2 id="私有变量"><a href="#私有变量" class="headerlink" title="私有变量"></a>私有变量</h2><p>闭包的另一个用处，是封装对象的私有属性和私有方法。</p><p>任何在函数中定义的变量，都可以认为是私有变量，因为不能在函数的外部访问这些变量，私有变量包括函数的参数、局部变量、在函数内部定义的其他函数。</p><p>如果在函数内部创建一个闭包，那么可以通过闭包自己的作用域链访问这些变量。利用这一点可以创建用于访问私有变量的公有方法。</p><h1 id="闭包的性能问题"><a href="#闭包的性能问题" class="headerlink" title="闭包的性能问题"></a>闭包的性能问题</h1><p>外层函数每次运行，都会生成一个新的闭包，而这个闭包又会保留外层函数的内部变量，所以内存消耗很大。因此不能滥用闭包，否则会造成网页的性能问题。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul><li><a href="https://wangdoc.com/javascript/types/function.html#闭包" target="_blank" rel="noopener">https://wangdoc.com/javascript/types/function.html#闭包</a></li><li>《JavaScript高级程序设计》</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> StudyNotes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS-值与单位</title>
+      <link href="/2020/08/13/CSS-Number-Length-Percentage/"/>
+      <url>/2020/08/13/CSS-Number-Length-Percentage/</url>
+      
+        <content type="html"><![CDATA[<h1 id="数字、长度、百分比"><a href="#数字、长度、百分比" class="headerlink" title="数字、长度、百分比"></a>数字、长度、百分比</h1><h2 id="数值类"><a href="#数值类" class="headerlink" title="数值类"></a>数值类</h2><p>以下全部归类为<strong>数值</strong>类：</p><table><thead><tr><th>数值类型</th><th>描述</th></tr></thead><tbody><tr><td><code>&lt;integer&gt;</code></td><td>一个整数，比如1024，-55</td></tr><tr><td><code>&lt;number&gt;</code></td><td>表示一个小数——可能有小数点后面的部分，也可能没有，例如0.255、128、-1.2</td></tr><tr><td><code>&lt;dimension&gt;</code></td><td>是一个带附加单位的小数，例如45deg、5s、10px。<code>&lt;dimension&gt;</code>是一个伞形类别，包括<code>&lt;length&gt;</code>、<code>&lt;angle&gt;</code>、<code>&lt;time&gt;</code>和<code>&lt;resolution&gt;</code>类型。</td></tr><tr><td><code>&lt;percentage&gt;</code></td><td>表示一些其他值的一部分，例如50%。百分比值总是相对于另一个量，例如，一个元素的长度相对于其父元素的长度。</td></tr></tbody></table><h2 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h2><p>最常见的数字类型是<code>&lt;length&gt;</code>，例如10px(像素)或30em。CSS中有两种类型的长度——相对长度和绝对长度。</p><h3 id="绝对长度单位"><a href="#绝对长度单位" class="headerlink" title="绝对长度单位"></a>绝对长度单位</h3><p>它们与其他任何东西都没有关系，通常被认为总是相同的大小。</p><table><thead><tr><th align="left">单位</th><th align="left">名称</th><th align="left">等价换算</th></tr></thead><tbody><tr><td align="left"><code>cm</code></td><td align="left">厘米</td><td align="left">1cm = 96px/2.54</td></tr><tr><td align="left"><code>mm</code></td><td align="left">毫米</td><td align="left">1mm = 1/10th of 1cm</td></tr><tr><td align="left"><code>Q</code></td><td align="left">四分之一毫米</td><td align="left">1Q = 1/40th of 1cm</td></tr><tr><td align="left"><code>in</code></td><td align="left">英寸</td><td align="left">1in = 2.54cm = 96px</td></tr><tr><td align="left"><code>pc</code></td><td align="left">十二点活字</td><td align="left">1pc = 1/16th of 1in</td></tr><tr><td align="left"><code>pt</code></td><td align="left">点</td><td align="left">1pt = 1/72th of 1in</td></tr><tr><td align="left"><code>px</code></td><td align="left">像素</td><td align="left">1px = 1/96th of 1in</td></tr></tbody></table><p>大多数在用于打印时比用于屏幕输出时更有用。</p><h3 id="相对长度单位"><a href="#相对长度单位" class="headerlink" title="相对长度单位"></a>相对长度单位</h3><p>对长度单位相对于其他一些东西，比如父元素的字体大小，或者视图端口的大小。</p><p>使用相对单位的好处是，经过一些仔细的规划，可以使文本或其他元素的大小与页面上的其他内容相对应。下表列出了web开发中一些最有用的单位。</p><table><thead><tr><th>单位</th><th>相对于</th></tr></thead><tbody><tr><td><code>em</code></td><td>在<code>font-size</code>中使用是相对于父元素的字体大小，在其他属性中使用时相对于自身的字体大小，如<code>width</code></td></tr><tr><td><code>ex</code></td><td>字符“x”的高度</td></tr><tr><td><code>ch</code></td><td>数字“0”的宽度</td></tr><tr><td><code>rem</code></td><td>根元素的字体大小</td></tr><tr><td><code>lh</code></td><td>元素的<code>line-height</code></td></tr><tr><td><code>vw</code></td><td>视窗宽度的1%</td></tr><tr><td><code>vh</code></td><td>视窗高度的1%</td></tr><tr><td><code>vmin</code></td><td>视窗较小尺寸的1%</td></tr><tr><td><code>vmax</code></td><td>视图大尺寸的1%</td></tr></tbody></table><h2 id="百分比"><a href="#百分比" class="headerlink" title="百分比"></a>百分比</h2><p>在许多情况下，百分比与长度的处理方法是一样的。百分比的问题在于，它们总是相对于其他值设置的。例如，如果将元素的字体大小设置为百分比，那么它将是元素父元素字体大小的百分比。如果使用百分比作为宽度值，那么它将是父值宽度的百分比。</p><h1 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h1><h2 id="颜色关键字"><a href="#颜色关键字" class="headerlink" title="颜色关键字"></a>颜色关键字</h2><p>可见链接：<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value</a></p><h2 id="十六进制RGB值"><a href="#十六进制RGB值" class="headerlink" title="十六进制RGB值"></a>十六进制RGB值</h2><p>每个十六进制值由一个散列/磅符号(#)和六个十六进制数字组成，每个十六进制数字都可以取0到f(代表15)之间的16个值中的一个——所以是0123456789abcdef。每对值表示一个通道—红色、绿色和蓝色—并允许我们为每个通道指定256个可用值中的任意一个(16 x 16 = 256)。</p><h2 id="RGB和RGBA"><a href="#RGB和RGBA" class="headerlink" title="RGB和RGBA"></a>RGB和RGBA</h2><p>RGB值是一个函数—RGB()—它有三个参数，表示颜色的红色、绿色和蓝色通道值，与十六进制值的方法非常相似。RGB的不同之处在于，每个通道不是由两个十六进制数字表示的，而是由一个介于0到255之间的十进制数字表示的</p><p>您还可以使用RGBA颜色——它们的工作方式与RGB颜色完全相同，因此您可以使用任何RGB值，但是有第四个值表示颜色的alpha通道，它控制不透明度。如果将这个值设置为<code>0</code>，它将使颜色完全透明，而设置为<code>1</code>将使颜色完全不透明。介于两者之间的值提供了不同级别的透明度。</p><h2 id="HSL和HSLA"><a href="#HSL和HSLA" class="headerlink" title="HSL和HSLA"></a>HSL和HSLA</h2><p>与RGB相比，HSL颜色模型的支持稍差一些(在旧版本的IE中不支持)，它是在设计师们感兴趣之后实现的。<code>hsl()</code> 函数接受色调、饱和度和亮度值作为参数，而不是红色、绿色和蓝色值，这些值的不同方式组合，可以区分1670万种颜色：</p><ul><li><strong>色调</strong>： 颜色的底色。这个值在0和360之间，表示色轮周围的角度。</li><li><strong>饱和度</strong>： 颜色有多饱和？ 它的值为0 - 100%，其中0为无颜色(它将显示为灰色阴影)，100%为全色饱和度</li><li><strong>亮度</strong>：颜色有多亮？ 它从0 - 100%中获取一个值，其中0表示没有光(它将完全显示为黑色)，100%表示完全亮(它将完全显示为白色)</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> StudyNotes </category>
+          
+          <category> FrontEnd </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS盒子模型II</title>
+      <link href="/2020/08/13/CSS-Box-Model-II/"/>
+      <url>/2020/08/13/CSS-Box-Model-II/</url>
+      
+        <content type="html"><![CDATA[<h1 id="外边距、内边距、边框"><a href="#外边距、内边距、边框" class="headerlink" title="外边距、内边距、边框"></a>外边距、内边距、边框</h1><h2 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h2><p>外边距是盒子周围一圈看不到的空间，它会把其他元素从盒子旁边<strong>推开</strong>。</p><p>其值可正可负，设置负值会导致与其他内容重叠。</p><p>无论使用标准模型还是替代模型，外边距总是在计算可见部分后额外添加。</p><h3 id="外边距折叠"><a href="#外边距折叠" class="headerlink" title="外边距折叠"></a>外边距折叠</h3><p>有两个外边距相接的元素，这些外边距将合并为一个外边距，即<strong>最大的单个外边距的大小</strong>。</p><p>例如有两个<code>&lt;p&gt;</code>元素，他们上下相接</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"one"</span>&gt;</span>I am paragraph one.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"two"</span>&gt;</span>I am paragraph two.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>设置其CSS属性为：</p><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.one</span> &#123;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.two</span> &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>随意修改<code>.two</code>中的<code>margin-top</code>属性为$≤50px$的值，会发现他们之间的间距不变。</p><h2 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h2><p>边框是在边距和填充框之间绘制的。</p><p>如果使用的是标准盒模型，边框的大小将添加到框的宽度和高度。</p><p>如果使用的是替代盒模型，边框的大小会使内容框更小，因为它会占用一些课用的宽度和高度。</p><p>可分别设置各边的宽度、颜色和样式：</p><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top" target="_blank" rel="noopener"><code>border-top</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-right" target="_blank" rel="noopener"><code>border-right</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-bottom" target="_blank" rel="noopener"><code>border-bottom</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-left" target="_blank" rel="noopener"><code>border-left</code></a></li></ul><p>设置所有边的宽度、颜色和样式：</p><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-width" target="_blank" rel="noopener"><code>border-width</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-style" target="_blank" rel="noopener"><code>border-style</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-color" target="_blank" rel="noopener"><code>border-color</code></a></li></ul><p>以及粒度最细的属性：</p><ul><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top-width" target="_blank" rel="noopener"><code>border-top-width</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top-style" target="_blank" rel="noopener"><code>border-top-style</code></a></li><li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-top-color" target="_blank" rel="noopener"><code>border-top-color</code></a></li><li>…</li></ul><h2 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h2><p>内边距位于边框和内容区域之间。</p><p>与外边距不同，不能有负数量的内边距，所以值必须是0或正的值。</p><p>应用于元素的任何背景都将显示在内边距后面，内边距通常用于将内容推离边框。</p><h1 id="盒子模型与内联盒子"><a href="#盒子模型与内联盒子" class="headerlink" title="盒子模型与内联盒子"></a>盒子模型与内联盒子</h1><p>以上所有的方法都完全适用于块级盒子。有些属性也可以应用于内联盒子，例如由<code>&lt;span&gt;</code>元素创建的那些内联盒子。</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    I am a paragraph and this is a <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span> inside that paragraph. A span is an inline element and so does not respect width and height.</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightblue;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>在一个段落中使用了<code>&lt;span&gt;</code>，并对其应用了宽度、高度、边距、边框和内边距。可以看到，宽度和高度被忽略了。外边距、内边距和边框是生效的，但它们不会改变其他内容与内联盒子的关系，因此内边距和边框会与段落中的其他单词重叠。</p><h2 id="使用display-inline-block"><a href="#使用display-inline-block" class="headerlink" title="使用display:inline-block"></a>使用<code>display:inline-block</code></h2><p>在这种情况下非常有用：不希望一个项切换到新行，但希望它可以设定宽度和高度，并避免上面看到的重叠。</p><p>一个元素使用<code>display: inline-block</code>，实现我们需要的块级的部分效果：</p><ul><li>设置<code>width</code> 和<code>height</code> 属性会生效。</li><li><code>padding</code>, <code>margin</code>, 以及<code>border</code> 会推开其他元素。</li></ul><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: lightblue;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid blue;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>可以通过增加内边距来增加链接的命中区域。使用<code>display: inline-block</code>来设置内边距，让用户更容易点击链接。</p><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"links-list"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>Link one<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>Link two<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>Link three<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.links-list</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">179</span>,<span class="number">57</span>,<span class="number">81</span>);</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">text-decoration</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">1em</span> <span class="number">2em</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.links-list</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgb</span>(<span class="number">66</span>, <span class="number">28</span>, <span class="number">40</span>);</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> StudyNotes </category>
+          
+          <category> FrontEnd </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript学习笔记——面向对象[创建对象]</title>
       <link href="/2020/07/22/JavaScipt-OOP/"/>
       <url>/2020/07/22/JavaScipt-OOP/</url>
@@ -370,7 +449,7 @@
     
     
     <entry>
-      <title>The Box Model</title>
+      <title>CSS盒子模型I</title>
       <link href="/2020/05/18/CSS-Box-Model/"/>
       <url>/2020/05/18/CSS-Box-Model/</url>
       
@@ -381,7 +460,7 @@
           
           <category> StudyNotes </category>
           
-          <category> WebDevelopment </category>
+          <category> FrontEnd </category>
           
       </categories>
       
@@ -390,9 +469,7 @@
             
             <tag> CSS </tag>
             
-            <tag> The box model </tag>
-            
-            <tag> Web </tag>
+            <tag> BoxModel </tag>
             
         </tags>
       

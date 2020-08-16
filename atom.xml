@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-07-26T02:04:55.228Z</updated>
+  <updated>2020-08-16T12:03:09.568Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript学习笔记——函数表达式[闭包]</title>
+    <link href="https://www.lihangzhu.com/2020/08/16/JavaScript-closure/"/>
+    <id>https://www.lihangzhu.com/2020/08/16/JavaScript-closure/</id>
+    <published>2020-08-16T05:56:43.000Z</published>
+    <updated>2020-08-16T12:03:09.568Z</updated>
+    
+    <summary type="html">
+    
+      学习JavaScript面向对象时的学习笔记，主要包含函数闭包。
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.lihangzhu.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS-值与单位</title>
+    <link href="https://www.lihangzhu.com/2020/08/13/CSS-Number-Length-Percentage/"/>
+    <id>https://www.lihangzhu.com/2020/08/13/CSS-Number-Length-Percentage/</id>
+    <published>2020-08-13T08:04:45.000Z</published>
+    <updated>2020-08-14T11:08:42.015Z</updated>
+    
+    <summary type="html">
+    
+      CSS笔记，讲述CSS的值与单位，总结自MDN
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="FrontEnd" scheme="https://www.lihangzhu.com/categories/StudyNotes/FrontEnd/"/>
+    
+    
+      <category term="CSS" scheme="https://www.lihangzhu.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS盒子模型II</title>
+    <link href="https://www.lihangzhu.com/2020/08/13/CSS-Box-Model-II/"/>
+    <id>https://www.lihangzhu.com/2020/08/13/CSS-Box-Model-II/</id>
+    <published>2020-08-13T08:04:45.000Z</published>
+    <updated>2020-08-14T08:06:43.241Z</updated>
+    
+    <summary type="html">
+    
+      CSS盒子模型笔记第二篇，主要讲述盒子的各个属性，总结自MDN
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+      <category term="FrontEnd" scheme="https://www.lihangzhu.com/categories/StudyNotes/FrontEnd/"/>
+    
+    
+      <category term="CSS" scheme="https://www.lihangzhu.com/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript学习笔记——面向对象[创建对象]</title>
@@ -327,29 +394,27 @@
   </entry>
   
   <entry>
-    <title>The Box Model</title>
+    <title>CSS盒子模型I</title>
     <link href="https://www.lihangzhu.com/2020/05/18/CSS-Box-Model/"/>
     <id>https://www.lihangzhu.com/2020/05/18/CSS-Box-Model/</id>
     <published>2020-05-18T15:08:09.000Z</published>
-    <updated>2020-05-22T00:36:00.700Z</updated>
+    <updated>2020-08-14T08:06:54.717Z</updated>
     
     <summary type="html">
     
-      A study notes when learning css box model on MDN
+      CSS盒子模型笔记第一篇，主要讲述盒子模型的概念，总结自MDN
     
     </summary>
     
     
       <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
     
-      <category term="WebDevelopment" scheme="https://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
+      <category term="FrontEnd" scheme="https://www.lihangzhu.com/categories/StudyNotes/FrontEnd/"/>
     
     
       <category term="CSS" scheme="https://www.lihangzhu.com/tags/CSS/"/>
     
-      <category term="The box model" scheme="https://www.lihangzhu.com/tags/The-box-model/"/>
-    
-      <category term="Web" scheme="https://www.lihangzhu.com/tags/Web/"/>
+      <category term="BoxModel" scheme="https://www.lihangzhu.com/tags/BoxModel/"/>
     
   </entry>
   
@@ -400,34 +465,6 @@
       <category term="Web" scheme="https://www.lihangzhu.com/tags/Web/"/>
     
       <category term="Document structure" scheme="https://www.lihangzhu.com/tags/Document-structure/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简单的Markdown语法总结</title>
-    <link href="https://www.lihangzhu.com/2020/03/10/Simple-Markdown-Syntax/"/>
-    <id>https://www.lihangzhu.com/2020/03/10/Simple-Markdown-Syntax/</id>
-    <published>2020-03-10T00:36:22.000Z</published>
-    <updated>2020-05-30T07:08:29.910Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;1-写在前面&quot;&gt;&lt;a href=&quot;#1-写在前面&quot; class=&quot;headerlink&quot; title=&quot;1. 写在前面&quot;&gt;&lt;/a&gt;1. 写在前面&lt;/h1&gt;&lt;p&gt;刚开始写博, 对md的语法还不熟悉, 决定先整理一下md的&lt;strong&gt;basic syntax&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.markdownguide.org/basic-syntax/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;markdownguide.org&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="Syntax" scheme="https://www.lihangzhu.com/categories/StudyNotes/Syntax/"/>
-    
-    
-      <category term="markdown" scheme="https://www.lihangzhu.com/tags/markdown/"/>
-    
-      <category term="syntax" scheme="https://www.lihangzhu.com/tags/syntax/"/>
     
   </entry>
   

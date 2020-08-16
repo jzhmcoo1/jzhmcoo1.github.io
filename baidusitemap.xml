@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.lihangzhu.com/2020/08/16/JavaScript-closure/</loc>
+    <lastmod>2020-08-16</lastmod>
+  </url>  <url>
+    <loc>https://www.lihangzhu.com/2020/08/13/CSS-Number-Length-Percentage/</loc>
+    <lastmod>2020-08-14</lastmod>
+  </url>  <url>
+    <loc>https://www.lihangzhu.com/2020/05/18/CSS-Box-Model/</loc>
+    <lastmod>2020-08-14</lastmod>
+  </url>  <url>
+    <loc>https://www.lihangzhu.com/2020/08/13/CSS-Box-Model-II/</loc>
+    <lastmod>2020-08-14</lastmod>
+  </url>  <url>
     <loc>https://www.lihangzhu.com/2020/07/22/JavaScipt-OOP/</loc>
     <lastmod>2020-07-26</lastmod>
   </url>  <url>
@@ -47,9 +59,6 @@
     <lastmod>2020-05-30</lastmod>
   </url>  <url>
     <loc>https://www.lihangzhu.com/2020/05/22/app-share-I/</loc>
-    <lastmod>2020-05-22</lastmod>
-  </url>  <url>
-    <loc>https://www.lihangzhu.com/2020/05/18/CSS-Box-Model/</loc>
     <lastmod>2020-05-22</lastmod>
   </url>  <url>
     <loc>https://www.lihangzhu.com/2020/04/01/Document-and-website-structure/</loc>
