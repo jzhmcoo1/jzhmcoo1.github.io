@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-08-16T12:03:09.568Z</updated>
+  <updated>2020-08-25T06:53:36.610Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScript学习笔记——面向对象[原型链继承]</title>
+    <link href="https://www.lihangzhu.com/2020/08/25/JavaScript-Prototypelink/"/>
+    <id>https://www.lihangzhu.com/2020/08/25/JavaScript-Prototypelink/</id>
+    <published>2020-08-25T04:21:17.000Z</published>
+    <updated>2020-08-25T06:53:36.610Z</updated>
+    
+    <summary type="html">
+    
+      学习JavaScript面向对象时的学习笔记，主要包含原型链和继承。
+    
+    </summary>
+    
+    
+      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+      <category term="JavaScript" scheme="https://www.lihangzhu.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript学习笔记——函数表达式[闭包]</title>
     <link href="https://www.lihangzhu.com/2020/08/16/JavaScript-closure/"/>
     <id>https://www.lihangzhu.com/2020/08/16/JavaScript-closure/</id>
     <published>2020-08-16T05:56:43.000Z</published>
-    <updated>2020-08-16T12:03:09.568Z</updated>
+    <updated>2020-08-16T13:45:32.939Z</updated>
     
     <summary type="html">
     
@@ -440,31 +461,6 @@
       <category term="Web" scheme="https://www.lihangzhu.com/tags/Web/"/>
     
       <category term="CSS selectors" scheme="https://www.lihangzhu.com/tags/CSS-selectors/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Document and website structure</title>
-    <link href="https://www.lihangzhu.com/2020/04/01/Document-and-website-structure/"/>
-    <id>https://www.lihangzhu.com/2020/04/01/Document-and-website-structure/</id>
-    <published>2020-04-01T15:58:42.000Z</published>
-    <updated>2020-04-22T14:15:03.600Z</updated>
-    
-    <summary type="html">
-    
-      An aritcle reprinted from MDN
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="WebDevelopment" scheme="https://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
-    
-    
-      <category term="Web" scheme="https://www.lihangzhu.com/tags/Web/"/>
-    
-      <category term="Document structure" scheme="https://www.lihangzhu.com/tags/Document-structure/"/>
     
   </entry>
   
