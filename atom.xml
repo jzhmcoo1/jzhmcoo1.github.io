@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-08-25T06:53:36.610Z</updated>
+  <updated>2020-09-22T03:41:58.678Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客部署踩坑记录</title>
+    <link href="https://www.lihangzhu.com/2020/09/22/hexo-ssh-deploy/"/>
+    <id>https://www.lihangzhu.com/2020/09/22/hexo-ssh-deploy/</id>
+    <published>2020-09-22T03:41:55.000Z</published>
+    <updated>2020-09-22T03:41:58.678Z</updated>
+    
+    <summary type="html">
+    
+      环境MacOS，hexo博客部署于腾讯云上，使用ssh进行链接，使用hexo -d进行推送，总是显示权限不够的问题。
+    
+    </summary>
+    
+    
+      <category term="踩坑记录" scheme="https://www.lihangzhu.com/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="hexo" scheme="https://www.lihangzhu.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript学习笔记——面向对象[原型链继承]</title>
@@ -164,27 +185,6 @@
     
     
       <category term="Git" scheme="https://www.lihangzhu.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo博客部署踩坑记录</title>
-    <link href="https://www.lihangzhu.com/2020/07/18/hexo-ssh-deploy/"/>
-    <id>https://www.lihangzhu.com/2020/07/18/hexo-ssh-deploy/</id>
-    <published>2020-07-18T07:36:38.000Z</published>
-    <updated>2020-09-22T03:38:36.401Z</updated>
-    
-    <summary type="html">
-    
-      环境MacOS，hexo博客部署于腾讯云上，使用ssh进行链接，使用hexo -d进行推送，总是显示权限不够的问题。
-    
-    </summary>
-    
-    
-      <category term="踩坑记录" scheme="https://www.lihangzhu.com/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
-    
-    
-      <category term="hexo" scheme="https://www.lihangzhu.com/tags/hexo/"/>
     
   </entry>
   

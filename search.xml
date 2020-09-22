@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo博客部署踩坑记录</title>
+      <link href="/2020/09/22/hexo-ssh-deploy/"/>
+      <url>/2020/09/22/hexo-ssh-deploy/</url>
+      
+        <content type="html"><![CDATA[<p>每次在使用<code>hexo d</code></p><p>进行部署的时候，总是显示权限不够报错</p><p><img src= "/img/loading.gif" data-src="https://gitee.com/jzhmcoo1/jzhmcoo1picrepo/raw/master/img/hexo-deploy-access-error.png" alt="image-20200922113617877"></p><p>网上一查好像是说sshkey的时间过期了（MacOS)环境</p><p>使用如下命令即可解决：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sh-3.2<span class="comment"># ssh-add /Users/lixing/.ssh/id_rsa</span></span><br><span class="line">Enter passphrase <span class="keyword">for</span> /Users/lixing/.ssh/id_rsa: </span><br><span class="line">Identity added: /Users/lixing/.ssh/id_rsa (lixing@zhulixingdeMacBook-Pro.local)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript学习笔记——面向对象[原型链继承]</title>
       <link href="/2020/08/25/JavaScript-Prototypelink/"/>
       <url>/2020/08/25/JavaScript-Prototypelink/</url>
@@ -175,31 +200,6 @@
         <tags>
             
             <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo博客部署踩坑记录</title>
-      <link href="/2020/07/18/hexo-ssh-deploy/"/>
-      <url>/2020/07/18/hexo-ssh-deploy/</url>
-      
-        <content type="html"><![CDATA[<p>每次在使用<code>hexo d</code></p><p>进行部署的时候，总是显示权限不够报错</p><p><img src= "/img/loading.gif" data-src="https://gitee.com/jzhmcoo1/jzhmcoo1picrepo/raw/master/img/hexo-deploy-access-error.png" alt="image-20200922113617877"></p><p>网上一查好像是说sshkey的时间过期了（MacOS)环境</p><p>使用如下命令即可解决：</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sh-3.2<span class="comment"># ssh-add /Users/lixing/.ssh/id_rsa</span></span><br><span class="line">Enter passphrase <span class="keyword">for</span> /Users/lixing/.ssh/id_rsa: </span><br><span class="line">Identity added: /Users/lixing/.ssh/id_rsa (lixing@zhulixingdeMacBook-Pro.local)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 踩坑记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
             
         </tags>
       

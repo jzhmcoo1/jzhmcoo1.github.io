@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lihangzhu.com/2020/09/22/hexo-ssh-deploy/</loc>
+    
+    <lastmod>2020-09-22T03:41:58.678Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/</loc>
     
     <lastmod>2020-09-22T03:39:01.354Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/</loc>
     
     <lastmod>2020-09-22T03:38:56.550Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lihangzhu.com/2020/07/18/hexo-ssh-deploy/</loc>
-    
-    <lastmod>2020-09-22T03:38:36.401Z</lastmod>
     
   </url>
   
