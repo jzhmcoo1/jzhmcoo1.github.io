@@ -168,6 +168,27 @@
   </entry>
   
   <entry>
+    <title>hexo博客部署踩坑记录</title>
+    <link href="https://www.lihangzhu.com/2020/07/18/hexo-ssh-deploy/"/>
+    <id>https://www.lihangzhu.com/2020/07/18/hexo-ssh-deploy/</id>
+    <published>2020-07-18T07:36:38.000Z</published>
+    <updated>2020-09-22T03:38:36.401Z</updated>
+    
+    <summary type="html">
+    
+      环境MacOS，hexo博客部署于腾讯云上，使用ssh进行链接，使用hexo -d进行推送，总是显示权限不够的问题。
+    
+    </summary>
+    
+    
+      <category term="踩坑记录" scheme="https://www.lihangzhu.com/categories/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="hexo" scheme="https://www.lihangzhu.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode-1144</title>
     <link href="https://www.lihangzhu.com/2020/07/12/Leetcode-1144/"/>
     <id>https://www.lihangzhu.com/2020/07/12/Leetcode-1144/</id>
@@ -302,7 +323,7 @@
     <link href="https://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/"/>
     <id>https://www.lihangzhu.com/2020/06/25/Config-my-centos-server-III/</id>
     <published>2020-06-24T16:09:22.000Z</published>
-    <updated>2020-07-22T02:58:07.006Z</updated>
+    <updated>2020-09-22T03:39:01.354Z</updated>
     
     <summary type="html">
     
@@ -327,7 +348,7 @@
     <link href="https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/"/>
     <id>https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/</id>
     <published>2020-06-22T09:55:51.000Z</published>
-    <updated>2020-07-22T02:54:58.546Z</updated>
+    <updated>2020-09-22T03:38:56.550Z</updated>
     
     <summary type="html">
     
@@ -436,31 +457,6 @@
       <category term="CSS" scheme="https://www.lihangzhu.com/tags/CSS/"/>
     
       <category term="BoxModel" scheme="https://www.lihangzhu.com/tags/BoxModel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS selectors I</title>
-    <link href="https://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/"/>
-    <id>https://www.lihangzhu.com/2020/04/17/CSS-Selectors-I/</id>
-    <published>2020-04-17T13:20:52.000Z</published>
-    <updated>2020-07-07T04:38:47.336Z</updated>
-    
-    <summary type="html">
-    
-      A Brief Summary of CSS selectors types (Part I)
-    
-    </summary>
-    
-    
-      <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-      <category term="WebDevelopment" scheme="https://www.lihangzhu.com/categories/StudyNotes/WebDevelopment/"/>
-    
-    
-      <category term="Web" scheme="https://www.lihangzhu.com/tags/Web/"/>
-    
-      <category term="CSS selectors" scheme="https://www.lihangzhu.com/tags/CSS-selectors/"/>
     
   </entry>
   
