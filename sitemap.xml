@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.lihangzhu.com/2020/07/18/LearnGit/</loc>
+    
+    <lastmod>2020-09-22T03:54:16.579Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.lihangzhu.com/2020/09/22/hexo-ssh-deploy/</loc>
     
-    <lastmod>2020-09-22T03:41:58.678Z</lastmod>
+    <lastmod>2020-09-22T03:51:03.000Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>https://www.lihangzhu.com/2020/06/22/Config-my-centos-server-II/</loc>
     
     <lastmod>2020-09-22T03:38:56.550Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.lihangzhu.com/2020/07/18/LearnGit/</loc>
-    
-    <lastmod>2020-09-20T16:00:23.742Z</lastmod>
     
   </url>
   

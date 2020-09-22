@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2020-09-22T03:41:58.678Z</updated>
+  <updated>2020-09-22T03:51:03.000Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -20,12 +20,20 @@
     <title>hexo博客部署踩坑记录</title>
     <link href="https://www.lihangzhu.com/2020/09/22/hexo-ssh-deploy/"/>
     <id>https://www.lihangzhu.com/2020/09/22/hexo-ssh-deploy/</id>
-    <published>2020-09-22T03:41:55.000Z</published>
-    <updated>2020-09-22T03:41:58.678Z</updated>
+    <published>2020-09-22T03:51:00.000Z</published>
+    <updated>2020-09-22T03:51:03.000Z</updated>
     
     <summary type="html">
     
-      环境MacOS，hexo博客部署于腾讯云上，使用ssh进行链接，使用hexo -d进行推送，总是显示权限不够的问题。
+      
+      
+        
+        
+          &lt;p&gt;每次在使用&lt;code&gt;hexo d&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;进行部署的时候，总是显示权限不够报错&lt;/p&gt;
+&lt;p&gt;&lt;img src= &quot;/img/loading.gif&quot;
+        
+      
     
     </summary>
     
@@ -172,7 +180,7 @@
     <link href="https://www.lihangzhu.com/2020/07/18/LearnGit/"/>
     <id>https://www.lihangzhu.com/2020/07/18/LearnGit/</id>
     <published>2020-07-18T07:36:38.000Z</published>
-    <updated>2020-09-20T16:00:23.742Z</updated>
+    <updated>2020-09-22T03:54:16.579Z</updated>
     
     <summary type="html">
     
