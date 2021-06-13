@@ -6,7 +6,7 @@
   <link href="https://www.lihangzhu.com/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2021-02-26T14:36:47.099Z</updated>
+  <updated>2021-06-13T02:23:04.000Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Webpack打包TypeScript</title>
+    <link href="https://www.lihangzhu.com/2021/06/13/HTTP-&amp;-HTTPS/"/>
+    <id>https://www.lihangzhu.com/2021/06/13/HTTP-&amp;-HTTPS/</id>
+    <published>2021-06-13T02:23:01.000Z</published>
+    <updated>2021-06-13T02:23:04.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+    <category term="网络协议" scheme="https://www.lihangzhu.com/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+    
+    <category term="HTTP" scheme="https://www.lihangzhu.com/tags/HTTP/"/>
+    
+    <category term="HTTPS" scheme="https://www.lihangzhu.com/tags/HTTPS/"/>
+    
+    <category term="SSL" scheme="https://www.lihangzhu.com/tags/SSL/"/>
+    
+  </entry>
   
   <entry>
     <title>Webpack打包CSS</title>
@@ -424,25 +455,6 @@
     
     
     <category term="408" scheme="https://www.lihangzhu.com/tags/408/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux Learning IV (Linux Files and Directories Permissions)</title>
-    <link href="https://www.lihangzhu.com/2020/07/06/Linux-files-directories-permissions/"/>
-    <id>https://www.lihangzhu.com/2020/07/06/Linux-files-directories-permissions/</id>
-    <published>2020-07-06T05:18:05.000Z</published>
-    <updated>2020-09-22T03:51:03.000Z</updated>
-    
-    
-    <summary type="html">Linux学习系列文章第四篇，主要讲述目录与文件权限问题</summary>
-    
-    
-    
-    <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-    
-    <category term="Linux" scheme="https://www.lihangzhu.com/tags/Linux/"/>
     
   </entry>
   
