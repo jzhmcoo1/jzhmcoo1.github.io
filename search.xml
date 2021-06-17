@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>散列表查找</title>
+      <link href="2021/06/17/Hash/"/>
+      <url>2021/06/17/Hash/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="散列表基本概念"><a href="#散列表基本概念" class="headerlink" title="散列表基本概念"></a>散列表基本概念</h1><ul><li>散列函数：把关键字映射成对应地址的函数，记为$Hash(key)=Addr$</li><li>冲突：散列函数可能把两个或以上不同关键字映射为同一地址</li><li>散列表：根据关键字进行直接访问的数据结构</li></ul><h1 id="散列函数的构造方法"><a href="#散列函数的构造方法" class="headerlink" title="散列函数的构造方法"></a>散列函数的构造方法</h1><ol><li>散列函数定义域必须包含全部关键字，值域范围取决于散列表大小</li><li>散列函数计算的地址应该能等概率、均匀分布在整个地址空间中，从而减少冲突的发生。</li><li>散列函数应该尽量简单，尽快算出任一关键字对应的地址。</li></ol><h1 id="常用散列函数"><a href="#常用散列函数" class="headerlink" title="常用散列函数"></a>常用散列函数</h1><h2 id="直接定址法"><a href="#直接定址法" class="headerlink" title="直接定址法"></a>直接定址法</h2><p>使用某个线性函数值作为散列地址，散列函数为<br>$$<br>H(key) = key ; 或 ; H(key)=a\times key+b<br>$$<br>式中$a,b$为常数。</p><ul><li>优点：计算简单，且不会产生冲突。<strong>适合关键字的分布基本连续</strong>。</li><li>缺点：关键字分布不连续空位多，浪费地址空间</li></ul><h2 id="除留余数法"><a href="#除留余数法" class="headerlink" title="除留余数法"></a>除留余数法</h2><p>假设散列表的长度为$m$，选一个不大于$m$但最接近或等于$m$的质数$p$，利用下列公式进行转换<br>$$<br>H(key) = key ;  % ; p<br>$$</p><h2 id="数字分析法"><a href="#数字分析法" class="headerlink" title="数字分析法"></a>数字分析法</h2><p>设关键字为$r$进制数，在各位上，各个数码出现频率不相同，选取那些分布比较均匀的若干位作为散列地址。这种方法适合于已知的关键字集合，若更换了关键字，则需要重新构造散列函数</p><h2 id="平方取中法"><a href="#平方取中法" class="headerlink" title="平方取中法"></a>平方取中法</h2><p>取关键字平方值的中间几位作为散列地址。这种方法得到的散列地址与关键字每位都有关系，因此得到的散列地址分布比较均匀。适合于关键字每位取值都不够均匀或均小于散列地址所需的位数。</p><h1 id="处理冲突的方法"><a href="#处理冲突的方法" class="headerlink" title="处理冲突的方法"></a>处理冲突的方法</h1><h2 id="开放地址法"><a href="#开放地址法" class="headerlink" title="开放地址法"></a>开放地址法</h2><h3 id="线性探测法"><a href="#线性探测法" class="headerlink" title="线性探测法"></a>线性探测法</h3><p>每次出现冲突就往后再找一位</p><p>缺点：造成大量元素在相邻散列地址上<strong>堆积</strong></p><h3 id="平方探测法"><a href="#平方探测法" class="headerlink" title="平方探测法"></a>平方探测法</h3><p>以$d_i=0^2,1^2,-1^2,2^2,-2^2…,k^2,-k^2$的顺序进行查找，其中$k≤m/2$，散列表长度$m$必须是一个可以表示为$4j+3$的质数时，才能探测完所有的地址</p><h3 id="再散列法"><a href="#再散列法" class="headerlink" title="再散列法"></a>再散列法</h3><p>发生冲突时，使用另一个散列函数在计算地址。具体散列函数形式如下：<br>$$<br>H_i = (H(key)+i\times Hash_2(key));%;m<br>$$<br>$i$是冲突的次数，初始为0。最多经过$m-1$次探测就会遍历表中所有位置，回到$H_0$</p><h2 id="拉链法"><a href="#拉链法" class="headerlink" title="拉链法"></a>拉链法</h2><p>为了避免非同义词发生冲突，可以把所有同义词存储到一个线性链表中。适用于经常插入和删除的情况。</p><p><img src= "/img/loading.gif" data-lazy-src="https://jzhmcoo1-1258918430.cos.ap-shanghai.myqcloud.com/markdown/20210617204632.png" alt="hash表"></p><h1 id="散列查找性能分析"><a href="#散列查找性能分析" class="headerlink" title="散列查找性能分析"></a>散列查找性能分析</h1><h2 id="度量"><a href="#度量" class="headerlink" title="度量"></a>度量</h2><p>虽然散列表在关键字与存储位置间建立了映射，但由于冲突的产生，使得散列表查找过程中仍需要与关键字进行比较。因此仍然需要以平均查找长度$ASL$作为衡量散列表查找效率的度量</p><h2 id="散列表查询效率"><a href="#散列表查询效率" class="headerlink" title="散列表查询效率"></a>散列表查询效率</h2><p>取决于：散列函数、冲突处理方法、装填因子</p><h3 id="装填因子"><a href="#装填因子" class="headerlink" title="装填因子"></a>装填因子</h3><p>散列表的装填因子记为$\alpha$，定义为一个表的装满程度<br>$$<br>\alpha = \frac{表中记录数n}{散列表长度m}<br>$$<br>散列表的平均查找长度依赖于散列表的装填因子，而不直接依赖于$n$或者$m$。</p><p>$\alpha$越大，发生冲突的可能性越大，反之则越小。</p><h1 id="参考书籍"><a href="#参考书籍" class="headerlink" title="参考书籍"></a>参考书籍</h1><p>《王道数据结构考研复习指导》</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> StudyNotes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> Hash表 </tag>
+            
+            <tag> 散列表 </tag>
+            
+            <tag> 查找 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HTTP和HTTPS对比</title>
       <link href="2021/06/13/HTTP-&amp;-HTTPS/"/>
       <url>2021/06/13/HTTP-&amp;-HTTPS/</url>
