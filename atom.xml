@@ -6,7 +6,7 @@
   <link href="https://www.lihangzhu.com/atom.xml" rel="self"/>
   
   <link href="https://www.lihangzhu.com/"/>
-  <updated>2021-06-26T02:53:45.000Z</updated>
+  <updated>2021-08-01T12:42:32.000Z</updated>
   <id>https://www.lihangzhu.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>跨域问题</title>
+    <link href="https://www.lihangzhu.com/2021/08/01/%E8%B7%A8%E5%9F%9F/"/>
+    <id>https://www.lihangzhu.com/2021/08/01/%E8%B7%A8%E5%9F%9F/</id>
+    <published>2021-08-01T12:42:27.000Z</published>
+    <updated>2021-08-01T12:42:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
+    
+    
+    <category term="前端" scheme="https://www.lihangzhu.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="跨域" scheme="https://www.lihangzhu.com/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>css关键概念</title>
@@ -476,25 +503,6 @@
     
     
     <category term="JavaScript" scheme="https://www.lihangzhu.com/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git学习笔记</title>
-    <link href="https://www.lihangzhu.com/2020/07/18/LearnGit/"/>
-    <id>https://www.lihangzhu.com/2020/07/18/LearnGit/</id>
-    <published>2020-07-18T07:36:38.000Z</published>
-    <updated>2020-09-22T03:54:16.579Z</updated>
-    
-    
-    <summary type="html">本文根据廖雪峰老师的 Git 教程总结的学习笔记</summary>
-    
-    
-    
-    <category term="StudyNotes" scheme="https://www.lihangzhu.com/categories/StudyNotes/"/>
-    
-    
-    <category term="Git" scheme="https://www.lihangzhu.com/tags/Git/"/>
     
   </entry>
   
